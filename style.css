@@ -1,0 +1,205 @@
+*{ 
+    padding: 0; 
+    margin: 0; 
+    border: 0; 
+   } 
+   *,*:before,*:after{ 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+   } 
+   :focus,:active{outline: none;} 
+   a:focus,a:active{outline: none;} 
+    
+   nav,footer,header,aside{display: block;} 
+    
+   html,body{ 
+    height: 100%; 
+    width: 100%; 
+    font-size: 100%; 
+    line-height: 1; 
+    font-size: 14px; 
+    -ms-text-size-adjust: 100%; 
+    -moz-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%; 
+   } 
+   input,button,textarea{font-family:inherit;} 
+
+   html{
+    scroll-behavior: smooth;
+   }
+    
+   input::-ms-clear{display: none;} 
+   button{cursor: pointer;} 
+   button::-moz-focus-inner {padding:0;border:0;} 
+   a, a:visited{text-decoration: none;} 
+   a:hover{text-decoration: none;} 
+   ul li{list-style: none;} 
+   img{vertical-align: top;} 
+    
+   h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 700;}
+
+body{
+   background-color:  #013220;
+   background-color: #dfc28b;
+   font-size: 24px;
+   color: #6C6960;
+   font-family: "Bitter", serif;
+   font-optical-sizing: auto;
+   font-weight: 700;
+   font-style: normal;
+   font-style: normal;
+   line-height: 30px;
+}
+
+header{
+    font-family: "Bitter", serif;
+    background-color:  #01482e;
+    color: #DBD7D2;
+    padding:20px 1%;
+    font-size: 40px;
+}
+.Сира__навигация{
+    display: flex;
+    justify-content: space-around;
+}
+.Сира__НавCсылки{
+    display: flex;
+    flex-direction: column;
+}
+.Сира__сылкаРаздел{
+    margin-top: 5px;
+    font-size: 30px;
+    color: #DBD7D2;
+}
+.Сира__сылкаРаздел::before{
+    content:'⥤';
+}
+h1{
+    font-family: "Bitter", serif;
+    display: inline-block;
+    text-align: right;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #01482e;
+}
+.Сира__ГлавыCсылки{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Сира__сылкаГлавы{
+    display: block;
+    color: #01482e;
+}
+.Сира__сылкаГлавы:before{
+    content:'⥤';
+}
+h3{
+    font-size: 27px;
+    color: #01482e;
+    margin-bottom: 5px;
+}
+.Сира__ТемыCсылки{
+    margin-bottom: 20px;
+}
+.Сира__сылкаТемы{
+    display: block;
+    color: #01482e;
+}
+.Сира__сылкаТемы:before{
+    content:'⥤';
+}
+h4{
+    font-size: 24px;
+    color: #01482e;
+    margin-bottom: 5px;
+}
+details summary{
+    list-style: none;
+}
+details summary:before{
+    content:'⥤';
+}
+details[open] summary:before{
+    content:'⥥';
+}
+.Сира{
+    margin: 4% 4% 0px 4%;
+    scroll-margin-top: 40px;
+}
+.Сира__тема{
+    margin-top: 25px;
+    scroll-margin-top: 40px;
+}
+.Сира__описаниеТемы{
+    background-color: #FADFAD;
+    padding: 10px 30px;
+    text-align: right;
+    border-radius: 50% 0 0 40px;
+}
+.Сира__пунктСписка{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.Сира__Список{
+    margin-bottom: 20px;
+}
+.Сира__пунктСписка:before{
+    content: '— ';
+}
+.Сира__История{
+    background-color: #FADFAD;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+}
+.Сира__Сунна{
+    background-color: #FFCF48;
+    padding: 30px 20px;
+    margin-bottom: 10px;
+}
+.Сира__пояснение{
+    background-color: #FFDB8B;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.Сира__определения{
+    background-color: #FF7F49;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.Сира__РечьАллаха{
+    background-color:  #013220;
+    padding: 15px 20px;
+    color: #DBD7D2;
+    display: flex;
+    width: 500px;
+    border-radius: 0 5px 5px 0;
+}
+@media(max-width:768px) {
+    body{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    header{
+        font-size: 30px;
+    }
+    .Сира__сылкаРаздел{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 16px;
+    }
+    .Сира__РечьАллаха{
+        width: 250px;
+    }
+}
